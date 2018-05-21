@@ -18,4 +18,7 @@ public class WebConfig extends WebMvcConfigurerAdapter{
         registry.addInterceptor(timeIntercept);
         super.addInterceptors(registry);
     }
+
+
+
 }
