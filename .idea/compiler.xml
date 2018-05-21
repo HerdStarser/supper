@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="restfulapp" />
+        <module name="restfulcore" />
+        <module name="restfuldao" />
+        <module name="restfulsafe" />
+        <module name="restfulservice" />
+        <module name="restfulutil" />
+        <module name="restfulweb" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.7">
+      <module name="restfulapp" target="1.8" />
+      <module name="restfulcore" target="1.8" />
+      <module name="restfuldao" target="1.8" />
+      <module name="restfulsafe" target="1.8" />
+      <module name="restfulservice" target="1.8" />
+      <module name="restfultest" target="1.8" />
+      <module name="restfulutil" target="1.8" />
+      <module name="restfulweb" target="1.8" />
+      <module name="supper" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

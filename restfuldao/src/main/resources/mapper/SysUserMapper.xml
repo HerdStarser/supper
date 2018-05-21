@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.restful.dao.system.IUserDao">
+	<resultMap type="com.restful.model.common.system.SysUser" id="usermap">
+	    <id property="id" column="id"/>
+	    <result property="username" column="username"/>
+	    <result property="account" column="account"/>
+	    <result property="password" column="password"/>
+	    <result property="phone" column="phone"/>
+	    <result property="email" column="email"/>
+	    <result property="orgId" column="orgId"/>
+	    <result property="third" column="third"/>
+	    <result property="isExpire" column="isExpire"/>
+	    <result property="isLocked" column="isLocked"/>
+	    <result property="isEnable" column="isEnable"/>
+	    <result property="isDelete" column="isDelete"/>
+	    <result property="deleteTime" column="deleteTime"/>
+	    <result property="createTime" column="createTime"/>
+	    <result property="isRealName" column="isRealName"/>
+		<association property="sysRoles" javaType="com.restful.model.common.system.SysRole">
+			<result property="roleId" column="roleId"/>
+			<result property="roleName" column="roleName"/>
+			<result property="roleAlias" column="roleAlias"/>
+			<result property="isEnable" column="isEnable"/>
+			<result property="isDelete" column="isDelete"/>
+			<result property="createTime" column="createTime"/>
+		</association>
+	</resultMap>
+	<sql id="usersql">
+		id,username,account,password,phone,email,orgId,third,isExpire,isLocked,isEnable,isDelete,deleteTime,createTime,isRealName
+	</sql>
+
+	<sql id="rolesql">
+		roleId,roleName,roleAlias,isEnable,isDelete,createTime
+	</sql>
+	<select id="getUser" parameterType="String" resultMap="usermap">
+		SELECT <include refid="usersql" />,<include refid="rolesql"/>
+		FROM sys_user,
+		<where>
+			account=#{account}
+		</where>
+	</select>
+
+
+</mapper>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/restfulapp/restfulapp.iml" filepath="$PROJECT_DIR$/restfulapp/restfulapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/restfulcore/restfulcore.iml" filepath="$PROJECT_DIR$/restfulcore/restfulcore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/restfuldao/restfuldao.iml" filepath="$PROJECT_DIR$/restfuldao/restfuldao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/restfulsafe/restfulsafe.iml" filepath="$PROJECT_DIR$/restfulsafe/restfulsafe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/restfulservice/restfulservice.iml" filepath="$PROJECT_DIR$/restfulservice/restfulservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/restfulutil/restfulutil.iml" filepath="$PROJECT_DIR$/restfulutil/restfulutil.iml" />
+      <module fileurl="file://$PROJECT_DIR$/restfulweb/restfulweb.iml" filepath="$PROJECT_DIR$/restfulweb/restfulweb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/supper.iml" filepath="$PROJECT_DIR$/supper.iml" />
+    </modules>
+  </component>
+</project>

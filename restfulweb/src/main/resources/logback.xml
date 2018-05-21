@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="30 seconds">
+	<!--文件输出至-->
+	<property name="log_home" value="/home" />
+	<!--控制台输出-->
+	<appender name="console_for_project" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
+			<charset>utf-8</charset>
+		</encoder>
+	</appender>
+	<!--按照每天生成日志文件-->
+	<appender name="daylog_for_project" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<FileNamePattern>${log_home}/restful_%d{yyyy-MM-dd}.log</FileNamePattern>
+			<maxHistory>15</maxHistory>
+		</rollingPolicy>
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<ImmediateFlush>true</ImmediateFlush>
+			<charset>utf-8</charset>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
+		</encoder>
+		<triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+			<MaxFileSize>64MB</MaxFileSize>
+		</triggeringPolicy>
+	</appender>	
+
+	<!-- root 默认日志配置 -->
+	<root level="info">
+		<appender-ref ref="console_for_project" />
+		<appender-ref ref="daylog_for_project" />
+	</root>
+
+	<!-- 包日志配置 -->
+	<logger name="com.restful.hbase" level="info">
+		<appender-ref ref="console_for_project" />
+		<appender-ref ref="daylog_for_project" />
+	</logger>
+	<logger name="com.restful.mysql" level="debug">
+		<appender-ref ref="console_for_project" />
+		<appender-ref ref="daylog_for_project" />
+	</logger>
+	<logger name="com.restful.hdfs" level="debug">
+		<appender-ref ref="console_for_project" />
+		<appender-ref ref="daylog_for_project" />
+	</logger>
+	<logger name="com.restful.mongo" level="debug">
+		<appender-ref ref="console_for_project" />
+		<appender-ref ref="daylog_for_project" />
+	</logger>
+	<logger name="com.restful.valid" level="info">
+		<appender-ref ref="console_for_project" />
+		<appender-ref ref="daylog_for_project" />
+	</logger>
+	<logger name="com.restful.api" level="info">
+		<appender-ref ref="console_for_project" />
+		<appender-ref ref="daylog_for_project" />
+	</logger>
+	<logger name="com.restful.dao" level="debug">
+		<appender-ref ref="console_for_project" />
+	</logger>
+</configuration>
