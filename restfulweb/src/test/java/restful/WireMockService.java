@@ -13,7 +13,7 @@ public class WireMockService {
         String host="172.17.70.136";
         Integer port=8060;
         WireMock.configureFor(host,port);
-       WireMock.removeAllMappings();
+        WireMock.removeAllMappings();
 
         produceWireMock("/for/data","a.txt");
     }

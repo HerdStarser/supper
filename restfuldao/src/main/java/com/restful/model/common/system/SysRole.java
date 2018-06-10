@@ -6,17 +6,17 @@ import java.util.Date;
 
 public class SysRole implements GrantedAuthority {
 
-    Long roleId;
+    private Long roleId;
 
-    String roleName;
+    private String roleName;
 
-    String roleAlias;
+    private String roleAlias;
 
-    Integer isEnable;
+    private Integer isEnable;
 
-    Integer isDelete;
+    private Integer isDelete;
 
-    Date createTime;
+    private Date createTime;
 
     public Long getRoleId() {
         return roleId;

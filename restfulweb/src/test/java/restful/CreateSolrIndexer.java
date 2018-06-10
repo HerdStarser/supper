@@ -1,8 +1,6 @@
-package restful;
+/*package restful;
 
 import com.restful.util.HBaseTemplate;
-import com.restful.util.SolrUtil;
-import org.apache.solr.client.solrj.impl.HttpSolrClient;
 import org.junit.Test;
 
 import java.util.List;
@@ -13,7 +11,7 @@ import java.util.Map;
 public class CreateSolrIndexer {
 
 
-    @Test
+   // @Test
     public void solrIndexer() throws Exception {
 
 
@@ -25,4 +23,4 @@ public class CreateSolrIndexer {
 
 
 
-}
+}*/

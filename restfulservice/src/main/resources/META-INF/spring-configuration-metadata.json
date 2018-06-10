@@ -1,0 +1,158 @@
+{
+  "groups": [
+    {
+      "sourceType": "com.restful.redis.config.RedisProperties",
+      "name": "my.config.redis",
+      "type": "com.restful.redis.config.RedisProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.restful.redis.config.RedisProperties",
+      "name": "my.config.redis.host",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.restful.redis.config.RedisProperties",
+      "name": "my.config.redis.port",
+      "type": "java.lang.Integer"
+    },
+    {
+      "defaultValue": false,
+      "name": "my.config.redis.enabled",
+      "description": "Enable Redis",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "defaultValue": false,
+      "name": "my.config.redis.isCluster",
+      "description": "Enable Redis Cluster.",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "defaultValue": 5000,
+      "name": "my.config.redis.timeOut",
+      "type": "java.lang.Integer"
+    },
+    {
+      "name": "my.config.redis.hosts",
+      "type": "java.lang.String"
+    },
+    {
+      "defaultValue": false,
+      "name": "my.config.redis.maxRedirects",
+      "type": "java.lang.Integer"
+    },
+    {
+      "defaultValue": 300,
+      "name": "my.config.redis.defaultExpiration",
+      "type": "java.lang.Integer"
+    },
+    {
+      "defaultValue": "redis_pw321",
+      "name": "my.config.redis.password",
+      "type": "java.lang.String"
+    },
+    {
+      "defaultValue": 128,
+      "name": "my.config.redis.maxTotal",
+      "type": "java.lang.Integer"
+    },
+    {
+      "defaultValue": 5,
+      "name": "my.config.redis.minIdle",
+      "type": "java.lang.Integer"
+    },
+    {
+      "defaultValue": 12,
+      "name": "my.config.redis.maxIdle",
+      "type": "java.lang.Integer"
+    }
+  ],
+  "hints": [
+    {
+      "name": "my.config.redis.port",
+      "values": [
+
+      ]
+    },
+    {
+      "name": "my.config.redis.host",
+      "values": [
+
+      ]
+    },
+    {
+      "name": "my.config.redis.timeOut",
+      "values": [
+
+      ]
+    },
+    {
+      "name": "my.config.redis.hosts",
+      "values": [
+
+      ]
+    },
+    {
+      "name": "my.config.redis.maxRedirects",
+      "values": [
+
+      ]
+    },
+    {
+      "name": "my.config.redis.enabled",
+      "values": [
+        {
+          "value": true
+        },
+        {
+          "value": false
+        }
+      ]
+    },
+    {
+      "name": "my.config.redis.isCluster",
+      "values": [
+        {
+          "value": true
+        },
+        {
+          "value": false
+        }
+      ]
+    },
+    {
+      "name": "my.config.redis.defaultExpiration",
+      "values": [
+
+      ]
+    },
+    {
+      "name": "my.config.redis.password",
+      "values": [
+
+      ]
+    },
+    {
+      "name": "my.config.redis.maxTotal",
+      "values": [
+
+      ]
+    },
+    {
+      "name": "my.config.redis.minIdle",
+      "values": [
+
+      ]
+    },
+    {
+      "name": "my.config.redis.maxIdle",
+      "values": [
+
+      ]
+    }
+  ]
+
+
+}

@@ -31,7 +31,7 @@ public enum ReturnMessage {
         this.message = message;
     }
 
-    public String getMessageByCode(Integer code){
+    public String getMessage(Integer code){
         for (ReturnMessage message:ReturnMessage.values()){
             if(message.getCode() == code){
                 return message.getMessage();

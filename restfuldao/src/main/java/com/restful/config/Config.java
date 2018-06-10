@@ -1,6 +1,8 @@
 package com.restful.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
+import com.restful.pageutil.PageInterceptor;
+import org.apache.ibatis.plugin.Interceptor;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.SqlSessionTemplate;
@@ -54,6 +56,8 @@ public class Config implements EnvironmentAware {
         PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
         try {
             bean.setMapperLocations(resolver.getResources("classpath:/mapper/*.xml"));
+            //添加自定义的分页插件
+            bean.setPlugins(new Interceptor[]{new PageInterceptor()});
             return bean.getObject();
         } catch (Exception e) {
             e.printStackTrace();

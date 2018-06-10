@@ -9,37 +9,37 @@ import java.util.List;
 
 public class SysUser implements UserDetails{
 
-    Long id;
+    private Long id;
 
-    String account;
+    private String account;
 
-    String username;
+    private String username;
 
-    String password;
+    private String password;
 
-    String phone;
+    private String phone;
 
-    String email;
+    private String email;
 
-    Long orgId;
+    private Long orgId;
 
-    String third;
+    private String third;
 
-    Integer isExpire;
+    private Integer isExpire;
 
-    Integer isLocked;
+    private Integer isLocked;
 
-    Integer isEnable;
+    private Integer isEnable;
 
-    Integer isDelete;
+    private Integer isDelete;
 
-    Date deleteTime;
+    private Date deleteTime;
 
-    Date createTime;
+    private Date createTime;
 
-    Integer isRealName;
+    private Integer isRealName;
 
-    List<SysRole> sysRoles;
+    private List<SysRole> sysRoles;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
